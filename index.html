@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Formulario Cuestionario 1</title>
+</head>
+<body>
+    <h1 id="title">Formulario Cuestionario 1</h1>
+    <p id="description">Este formulario sera para mi certificacion</p>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Nombre:<input id="name" type="text" placeholder="Nombre" required></label>
+        <label id="email-label" for="email">Correo:<input id="email" type="email" placeholder="Correo" required></label>
+        <label id="number-label" for="number">Edad:<input id="number" type="number" min="13" max="120" placeholder="Edad" required></label>
+        <select id="dropdown">
+            <option value="1">opcion 1</option>
+            <option value="2">opcion 2</option>
+        </select>
+        <fieldset>
+            <legend>Selecciona una opcion (required)</legend>
+            <label for=""><input class="inline" name="radio" type="radio" value="1" checked>cosa 1</label>
+            <label for=""><input class="inline" name="radio" type="radio" value="2">cosa 2</label>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona una o mas opciones</legend>
+            <label for="verificador1"><input class="inline" id="verificador1" type="checkbox" value="a">Ayer</label>
+            <label for="verificador2"><input class="inline" id="verificador2" type="checkbox" value="b">Hoy</label>
+            <label for="verificador3"><input class="inline" id="verificador3" type="checkbox" value="c">Mañana</label>
+        </fieldset>
+        <label class="texta" for="comments">comments:
+            <textarea id="comments" rows="3" cols="30" name="comments" placeholder="Me gusto esto..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
